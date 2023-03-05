@@ -33,4 +33,3 @@ jobs:
         run: | 
           chmod +x mvnw
           ./mvnw build
-copy
