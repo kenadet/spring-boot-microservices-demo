@@ -2,7 +2,7 @@
 
 WIP Sample Microservice Application with:
 
-Bookkeeping or Catalog Microservice 
+Bookkeeping or Catalog Microservice   
 Config Server  
 Gateway Microservice  
 Authentication Server
