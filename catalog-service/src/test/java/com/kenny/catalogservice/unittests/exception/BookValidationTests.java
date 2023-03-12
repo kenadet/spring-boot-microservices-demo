@@ -23,7 +23,7 @@ class BookValidationTests {
 
     @Test
     void whenAllFieldsCorrectThenValidationSucceeds() {
-        var book = new Book(1L, "1234567890", "Title", "Author", 9.90, null, null , 1);
+        var book = new Book(1L, "1234567890", "Title", "Author",  "Publisher",9.90, null, null , 1);
         Set<ConstraintViolation<Book>> violations = validator.validate(book);
         assertThat(violations).isEmpty();
     }
@@ -31,7 +31,7 @@ class BookValidationTests {
     @Test
     void whenIsbnDefinedButIncorrectThenValidationFails() {
         var book =
-                new Book(1L, "a234567890", "Title", "Author", 9.90, null, null, 1);
+                new Book(1L, "a234567890", "Title", "Author", "Publisher",9.90, null, null, 1);
         Set<ConstraintViolation<Book>> violations = validator.validate(book);
         assertThat(violations).hasSize(1);
         assertThat(violations.iterator().next().getMessage())

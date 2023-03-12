@@ -38,7 +38,7 @@ class BookRepositoryJdbcTests {
         Instant createdDate = Instant.parse("2023-10-01T10:15:30.00Z");
         Instant lastModifiedDate = Instant.parse("2023-10-01T10:15:30.00Z");
 
-        var book = new Book(1L, bookIsbn, "Title", "Author", 12.90, createdDate, lastModifiedDate, 1);
+        var book = new Book(1L, bookIsbn, "Title", "Author", "Publisher", 12.90, createdDate, lastModifiedDate, 1);
         jdbcAggregateTemplate.insert(book);
         Optional<Book> actualBook = bookRepository.findByIsbn(bookIsbn);
 
