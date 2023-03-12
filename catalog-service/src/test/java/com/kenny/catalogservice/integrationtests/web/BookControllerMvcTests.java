@@ -1,4 +1,4 @@
-package com.kenny.catalogservice.integrationtests;
+package com.kenny.catalogservice.integrationtests.web;
 
 import com.kenny.catalogservice.controller.BookController;
 import com.kenny.catalogservice.exception.BookNotFoundException;
@@ -7,14 +7,16 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
-import static org.mockito.BDDMockito.given;
-import static org.springframework.test.web.servlet.request
-        .MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result
-        .MockMvcResultMatchers.status;
 
-@WebMvcTest(BookController.class)
+import static org.mockito.BDDMockito.given;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+
+@ActiveProfiles("integration")
+@WebMvcTest(BookController.class) // Alternatively use @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class BookControllerMvcTests {
 
     @Autowired

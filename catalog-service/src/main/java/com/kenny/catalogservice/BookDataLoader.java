@@ -18,9 +18,9 @@ public class BookDataLoader {
     @EventListener(ApplicationReadyEvent.class)
     public void loadBookTestData() {
         var book1 = new Book(1L,"1234567891", "Northern Lights",
-                "Lyra Silverstar", 9.90, null, null, 1);
+                "Lyra Silverstar", "Pearson Books", 9.90, null, null, 1);
         var book2 = new Book(1L, "1234567892", "Polar Journey",
-                "Iorek Polarson", 12.90, null, null,1);
+                "Iorek Polarson", "Pearson Books", 12.90, null, null,1);
         bookRepository.save(book1);
         bookRepository.save(book2);
     }
