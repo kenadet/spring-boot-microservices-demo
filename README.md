@@ -9,9 +9,11 @@ Authentication Server
 
 To run, ensure kubernetes and docker are installed and running.    
 
+On cli:
+
 From project root directory, do `tilt up` to run the microservices. 
 
-If you have httpie install (`brew install httpie`) do the following to make post 
+If you have httpie install (`brew install httpie`) do the following to make also to post 
 and get request to catalog endpoint:  
 
 `http POST http://localhost:9001/books author="kehinde" publisher="adetiloye"
