@@ -4,8 +4,8 @@ Sample Microservice Application with:
 
 Bookkeeping or Catalog Microservice   
 Config Server  
-Gateway Microservice (TODO) 
-Authentication Server (TODO) 
+Gateway Microservice (TODO)   
+Authentication Server (TODO)   
 
 To run, ensure kubernetes and docker are installed and running.    
 
