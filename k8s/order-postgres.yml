@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: postgres
+  name: order-postgres
   labels:
-    db: postgres
+    db: order-postgres
 spec:
   selector:
     matchLabels:
-      db: postgres
+      db: order-postgres
   template:
     metadata:
       labels:
-        db: postgres
+        db: order-postgres
     spec:
       containers:
-        - name: postgres
+        - name: order-postgres
           image: postgres:14.4
           env:
             - name: POSTGRES_USER
@@ -22,7 +22,7 @@ spec:
             - name: POSTGRES_PASSWORD
               value: password
             - name: POSTGRES_DB
-              value: catalog_db
+              value: order_db
           resources:
             requests:
               cpu: 100m
@@ -35,13 +35,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: postgres
+  name: order-postgres
   labels:
-    db: postgres
+    db: order-postgres
 spec:
   type: ClusterIP
   selector:
-    db: postgres
+    db: order-postgres
   ports:
     - protocol: TCP
       port: 5432

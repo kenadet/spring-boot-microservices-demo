@@ -1,6 +1,5 @@
 package com.kenny.catalogservice.controller;
 
-import com.kenny.catalogservice.config.CustomProperties;
 import com.kenny.catalogservice.domain.Book;
 import com.kenny.catalogservice.service.BookService;
 import jakarta.validation.Valid;

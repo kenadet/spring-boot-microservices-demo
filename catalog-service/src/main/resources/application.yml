@@ -14,6 +14,10 @@ spring:
       hikari:
         connection-timeout: 2000
         maximum-pool-size: 5
-  sql:  #To init tables in schema
-    init:
-      mode: always
+
+  flyway:
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+    url: jdbc:postgresql://localhost:5432/catalog_db
+    table: catalog_flyway_schema_history
+    baselineOnMigrate: true
