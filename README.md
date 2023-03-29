@@ -19,7 +19,7 @@ to make post and get request to catalog endpoint:
 
 `http GET http://localhost:9001/books`.
 
-To make a post request to the Order endpoint,   do:
+To make a post request to the Order endpoint do:   
 `http POST http://localhost:9002/orders isbn="1232323232" quantity=2`
 
 To undeploy microservices do `tilt down`.
