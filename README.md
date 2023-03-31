@@ -1,7 +1,7 @@
-# spring-microservice-demo
+# spring-microservice-demo 
 
-Sample Microservice Application with:
-Order Microservice
+Sample Microservice Application with:  
+Order Microservice   
 Bookkeeping or Catalog Microservice   
 Config Server  
 Gateway Microservice (TODO)   
