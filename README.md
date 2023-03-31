@@ -18,7 +18,7 @@ Also on cli, if you have httpie installed (`brew install httpie`), do the follow
 
 `http GET http://localhost:9001/books`.
 
-to make post and get request to catalog endpoint
+to make post and get request to catalog endpoint.
 
 To make a post request to the Order endpoint do:   
 `http POST http://localhost:9002/orders isbn="1232323232" quantity=2`
