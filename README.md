@@ -7,7 +7,7 @@ Config Server
 Gateway Microservice (TODO)   
 Authentication Server (TODO)   
 
-To run, ensure kubernetes and docker are installed and running.    
+To run, ensure kubernetes, docker, and tilt are installed and running.    
 
 On cli, from project root directory, do `tilt up` to run the microservices. 
 
