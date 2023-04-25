@@ -24,8 +24,10 @@ spec:
               value: "50"
             - name: SPRING_DATASOURCE_URL
               value: jdbc:postgresql://catalog-postgres:5432/catalog_db
+            - name: SPRING_CONFIG_IMPORT
+              value: optional:configserver:http://config-server:8888
             - name: SPRING_PROFILES_ACTIVE
-              value: testdata
+              value: dev
             - name: SPRING_FLYWAY_URL
               value: jdbc:postgresql://catalog-postgres:5432/catalog_db
 
