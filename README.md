@@ -4,7 +4,7 @@ Sample Microservice Application with:
 Order Microservice   
 Bookkeeping or Catalog Microservice   
 Config Server  
-Gateway Microservice (TODO)   
+Gateway Microservice   
 Authentication Server (TODO)   
 
 To run, ensure tilt, kubernetes, and docker are installed and running.    
