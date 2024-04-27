@@ -6,9 +6,7 @@ Bookkeeping or Catalog Microservice
 Config Server  
 Gateway Microservice     
 
-To run, ensure tilt, kubernetes, and docker are installed and running.    
-
-On cli, from project root directory, do `tilt up` to run the microservices. 
+To run, on cli, from project root directory, do `tilt up` to startup the microservices. 
 
 Also on cli, if you have httpie installed (`brew install httpie`), do the following:  
 
@@ -23,3 +21,5 @@ To make a post request to the Order endpoint do:
 `http POST http://localhost:9002/orders isbn="1232323232" quantity=2`
 
 To undeploy microservices do `tilt down`.
+
+Ensure, tilt, kubernetes, docker, httpie are installed.
