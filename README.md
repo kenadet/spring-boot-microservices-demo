@@ -17,9 +17,6 @@ Also on cli, if you have httpie installed (`brew install httpie`), do the follow
 
 to make post and get request to catalog endpoint.
 
-To make a post request to the Order endpoint do:   
-`http POST http://localhost:9002/orders isbn="1232323232" quantity=2`
-
 To undeploy microservices do `tilt down`.
 
 Ensure, tilt, kubernetes, docker, httpie are installed.
