@@ -1,4 +1,4 @@
-# spring-microservice-demo 
+# Sample spring-microservice-demo 
 
 Sample Microservice Application with:  
 Order Microservice   
