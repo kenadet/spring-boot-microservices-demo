@@ -6,7 +6,7 @@ Bookkeeping or Catalog Microservice
 Config Server  
 Gateway Microservice     
 
-To run, on cli, from project root directory, do `tilt up` to startup the microservices. 
+To run, on cli, from project root directory, do `tilt up` to startup microservices. 
 
 Also on cli, if you have httpie installed (`brew install httpie`), do the following:  
 
