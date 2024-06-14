@@ -10,7 +10,7 @@ To run, on cli, from project root directory, do `tilt up` to startup microservic
 
 Also on cli, if you have httpie installed (`brew install httpie`), do the following:  
 
-`http POST http://localhost:9001/books author="kehinde" publisher="adetiloye"`   
+`http POST http://localhost:9001/books author="kennz" publisher="tom"`   
 `isbn="1232323232" price=9.90 title="Hi"`. 
 
 `http GET http://localhost:9001/books`.
