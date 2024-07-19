@@ -1,6 +1,6 @@
-# Sample spring-microservice-demo 
+# spring-microservices-demo built with Java, Spring-boot, and Spring Cloud
 
-Sample Microservice Application with:  
+Microservices:  
 Order Microservice   
 Bookkeeping or Catalog Microservice   
 Config Server  
