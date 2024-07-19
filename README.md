@@ -1,4 +1,4 @@
-# spring-microservices-demo built with Java, Spring-boot, and Spring Cloud
+# Microservices built with Java, Spring-boot, and Spring Cloud
 
 Microservices:  
 Order Microservice   
